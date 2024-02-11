@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 body {
-    background-image: url(imagens/pexels-luciann-photography-3566226.jpg);
+    background: url(imagens/pexels-luciann-photography-3566226.jpg) no-repeat top center;
+    background-size: cover;
     background-color: black;
-    background-size: 100%;
     font-family: sans-serif;
     padding: 20px;
     MARGIN-TOP: 140px;
