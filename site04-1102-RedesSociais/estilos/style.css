@@ -41,11 +41,12 @@ main {
 #tela {
     position: relative;
     top: 12.9%;
-    left: 7.3%;
+    left: 7.5%;
 
     height: 470px;
     width: 266px;
     background-attachment: fixed;
+    background-color: white;
 }
 
 #redes-sociais {
@@ -53,9 +54,9 @@ main {
 }
 
 #redes-sociais img {
-    width: 50px;
+    width: 43.5px;
     margin: 10px;
-    border-radius: 50%;
+    border-radius: 30%;
     box-shadow: 2px 2px 5px black;
 }
 
@@ -67,4 +68,13 @@ main {
     box-shadow: 5px 5px 5px black;
     
     transition: transform .3s, border 0.7s;
+}
+
+#home {
+    width: 50px;
+    height: 50px;
+    border-radius: 23%;
+    position: relative;
+    top: 88px;
+    left: 130px;
 }
