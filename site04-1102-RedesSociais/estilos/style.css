@@ -17,13 +17,11 @@ body {
     background-size: cover;
     background-attachment: fixed;
     min-width: 450px;
-
 }
 
 main {
     position: relative;
     height: 100vh;
-
 }
 
 #telefone {
@@ -35,7 +33,6 @@ main {
     height: 624.5px;
     width: 305.5px;
     background: url('../imagens/frame-iphone.png');
-
 }
 
 #tela {
