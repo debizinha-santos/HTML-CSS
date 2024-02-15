@@ -14,7 +14,7 @@
 
         fieldset {
             width: 300px;
-            
+            border-color: green;
         }
 
         div {
@@ -31,6 +31,11 @@
         div > form > h1 {
             text-align: center;
         }
+        
+        .msg {
+            font-style: italic;
+        }
+
     </style>
 </head>
 <body>
@@ -40,8 +45,8 @@
             <fieldset>
                 <legend><strong> Soma </strong></legend>
                 <p>
-                    <label class="esq" for="in1">Digite um número aqui:</label>
-                    <input class="dir" type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)" placeholder="0 a 50">
+                    <label for="in1">Digite um número aqui:</label>
+                    <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)" placeholder="0 a 50">
                             <!-- oninput é uma função javascript -->
                 </p>
                 <p>
@@ -50,7 +55,7 @@
                             <!-- oninput é uma função javascript -->
                     </p>
                     <p>
-                    <label for="isoma">O resultado da soma é </label>
+                    <label class="msg" for="isoma">O resultado da soma é </label>
                     <output name="soma" id="isoma">0</output>!
                     </p>
             </fieldset>
@@ -68,7 +73,7 @@
                     <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isub.innerHTML = Number(in1.value) - Number(in2.value)"placeholder="0 a 50">
                     </p>
                     <p>
-                    <label for="isub">O resultado da subtração é </label>
+                    <label class="msg" for="isub">O resultado da subtração é </label>
                     <output name="sub" id="isub">0</output>!
                     </p>
             </fieldset>
@@ -84,27 +89,27 @@
                 <p>
                 <label for="in2">Digite outro número aqui:</label>
                 <input type="number" name="n2" id="in2" min="0" max="50" required oninput="imult.innerHTML = Number(in1.value) * Number(in2.value)" placeholder="0 a 50">
-                            </p>
-                            <p>
-                            <label for="imult">O resultado da multiplicação é </label>
-                            <output name="mult" id="imult">0</output>!
-                            </p>
-                    </fieldset>
-                                </form>
-                    <br><br>
-                                <form action="cadastro.php" method="post" autocomplete="on">
-                    <fieldset>
-                        <legend><strong> Divisão </strong></legend>
-                        <p>
-                            <label for="in1">Digite um número aqui:</label>
-                            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="idiv.innerHTML = Number(in1.value) / Number(in2.value)" placeholder="0 a 50">
+                </p>
+                <p>
+                <label class="msg" for="imult">O resultado da multiplicação é </label>
+                <output name="mult" id="imult">0</output>!
+                </p>
+            </fieldset>
+        </form>
+        <br><br>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <fieldset>
+                <legend><strong> Divisão </strong></legend>
+                <p>
+                <label for="in1">Digite um número aqui:</label>
+                <input type="number" name="n1" id="in1" min="0" max="50" required oninput="idiv.innerHTML = Number(in1.value) / Number(in2.value)" placeholder="0 a 50">
                 </p>
                 <p>
                 <label for="in2">Digite outro número aqui:</label>
                 <input type="number" name="n2" id="in2" min="0" max="50" required oninput="idiv.innerHTML = Number(in1.value) / Number(in2.value)" placeholder="0 a 50">
                 </p>
                 <p>
-                <label for="idiv">O resultado da divisão é </label>
+                <label class="msg" for="idiv">O resultado da divisão é </label>
                 <output name="div" id="idiv">0</output>!
                 </p>
             </fieldset>
@@ -112,22 +117,22 @@
         <br><br>
         <form action="cadastro.php" method="post" autocomplete="on"></form>
             <fieldset>
-                <legend>Testando range com output (oninput)</legend>
+                <legend><strong>Testando range com output (oninput)</strong></legend>
                 <p>
-                <label for="inum">Arraste o ponto na barra: </label>
+                <label class="msg" for="inum">Arraste o ponto na barra: </label>
                 <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
                 <output id="ival">5</output>
                 </p>
             </fieldset>
             <br><br>
             <fieldset>
-            <legend>Idade:</legend>
+                <legend><strong>Idade:</strong></legend>
                 <p>
                     <label for="iano">E que ano você nasceu?</label>
                     <input type="number" name="ano" id="iano" min="1920" max="2024" oninput="calcIdade()">
                     </p>
                     <p>
-                    <label for="iidade">Você tem ou vai fazer </label>
+                    <label class="msg" for="iidade">Você tem ou vai fazer </label>
                     <output id="iidade">?</output> este ano :D
                     </p>
                 </fieldset>
