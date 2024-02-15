@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemento output em formulários HTML</title>
+    <title>Elemento output em formulários HTML+Javascript</title>
 </head>
 <body>
     <h1>Cálculos com formulários e JavaScript</h1>
@@ -81,12 +81,40 @@
                 </p>
         </fieldset>
     </form>
+    <br><br>
+    <form action="cadastro.php" method="post" autocomplete="on"></form>
+    <fieldset>
+        <legend>Testando range com output (oninput)</legend>
+        <p>
+            <label for="inum">Arraste o ponto na barra: </label>
+            <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival">5</output>
+        </p>
+    </fieldset>
+    <br><br>
+    <fieldset>
+        <legend>Idade:</legend>
+        <p>
+            <label for="iano">E que ano você nasceu?</label>
+            <input type="number" name="ano" id="iano" min="1920" max="2024" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="iidade">Você tem ou vai fazer </label>
+            <output id="iidade">?</output> este ano :D
+        </p>
 
+    </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
-
     </form>
+
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number (iano.value)
+        }
+    </script>
 </body>
 </html>
