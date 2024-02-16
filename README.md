@@ -21,7 +21,7 @@
 <hr>
 <br>
 <p>
-<a href="https://debizinha-santos.github.io/HTML-CSS/tabelas-formularios/formulario003.html" target="_blank">Formulário básico</a> - Testando a primeira função de JavaScript</p>
+<a href="https://debizinha-santos.github.io/HTML-CSS/tabelas-formularios/formulario003.html" target="_blank">Formulário básico com cálculos</a> - Testando a primeira função de JavaScript</p>
 <hr>
 <br>
 <p>
