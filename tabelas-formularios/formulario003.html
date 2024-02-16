@@ -6,34 +6,50 @@
     <title>Elemento output em formulários HTML+Javascript</title>
     <style>
 
-        body {
-        background-color: rgb(46, 109, 89);
-        font-family: sans-serif;
-        min-width: 300px;
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
         }
 
-        fieldset {
-            width: 300px;
-            border-color: green;
+        body {
+            background-color: rgb(46, 109, 89);
+            font-family: sans-serif;
         }
 
         div {
-        background-color: rgba(141, 255, 255, 0.335);
-        padding: 5%;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: justify;
-        width: 330px;
+            display: block;
+            margin: auto;
+            background-color: rgba(141, 255, 255, 0.335);
+            width: 60vw;
+            padding: 5%;
+            text-align: justify;
+            min-width: 350px;
+        }
+
+        fieldset {
+            width: 50vw;
+            border-color: green;
+            margin-top: 20px;
+            padding: 10px;
+            min-width: 300px;
+        }
+
+        legend {
+            text-align: center;
         }
 
         div > form > h1 {
             text-align: center;
         }
+
+        #in1, #in2, #ival {
+            float: right;
+        }
         
         .msg {
             font-style: italic;
+
         }
 
     </style>
@@ -49,36 +65,40 @@
                     <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)" placeholder="0 a 50">
                             <!-- oninput é uma função javascript -->
                 </p>
+                <br>
                 <p>
                     <label for="in2">Digite outro número aqui:</label>
                     <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)" placeholder="0 a 50">
                             <!-- oninput é uma função javascript -->
-                    </p>
-                    <p>
+                </p>
+                <br>
+                <p>
                     <label class="msg" for="isoma">O resultado da soma é </label>
                     <output name="soma" id="isoma">0</output>!
-                    </p>
+                </p>
             </fieldset>
         </form>
-        <br><br>
+        <br>
         <form action="cadastro.php" method="post" autocomplete="on">
             <fieldset>
                 <legend><strong> Subtração </strong></legend>
-                    <p>
+                <p>
                     <label for="in1">Digite um número aqui:</label>
                     <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isub.innerHTML = Number(in1.value) - Number(in2.value)"placeholder="0 a 50">
-                    </p>
-                    <p>
+                </p>
+                <br>
+                <p>
                     <label for="in2">Digite outro número aqui:</label>
                     <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isub.innerHTML = Number(in1.value) - Number(in2.value)"placeholder="0 a 50">
-                    </p>
-                    <p>
+                </p>
+                <br>
+                <p>
                     <label class="msg" for="isub">O resultado da subtração é </label>
                     <output name="sub" id="isub">0</output>!
-                    </p>
+                </p>
             </fieldset>
         </form>
-        <br><br>
+        <br>
         <form action="cadastro.php" method="post" autocomplete="on">
             <fieldset>
                 <legend><strong> Multiplicação </strong></legend>
@@ -86,17 +106,19 @@
                 <label for="in1">Digite um número aqui:</label>
                 <input type="number" name="n1" id="in1" min="0" max="50" required oninput="imult.innerHTML = Number(in1.value) * Number(in2.value)" placeholder="0 a 50">
                 </p>
+                <br>
                 <p>
                 <label for="in2">Digite outro número aqui:</label>
                 <input type="number" name="n2" id="in2" min="0" max="50" required oninput="imult.innerHTML = Number(in1.value) * Number(in2.value)" placeholder="0 a 50">
                 </p>
+                <br>
                 <p>
                 <label class="msg" for="imult">O resultado da multiplicação é </label>
                 <output name="mult" id="imult">0</output>!
                 </p>
             </fieldset>
         </form>
-        <br><br>
+        <br>
         <form action="cadastro.php" method="post" autocomplete="on">
             <fieldset>
                 <legend><strong> Divisão </strong></legend>
@@ -104,10 +126,12 @@
                 <label for="in1">Digite um número aqui:</label>
                 <input type="number" name="n1" id="in1" min="0" max="50" required oninput="idiv.innerHTML = Number(in1.value) / Number(in2.value)" placeholder="0 a 50">
                 </p>
+                <br>
                 <p>
                 <label for="in2">Digite outro número aqui:</label>
                 <input type="number" name="n2" id="in2" min="0" max="50" required oninput="idiv.innerHTML = Number(in1.value) / Number(in2.value)" placeholder="0 a 50">
                 </p>
+                <br>
                 <p>
                 <label class="msg" for="idiv">O resultado da divisão é </label>
                 <output name="div" id="idiv">0</output>!
@@ -120,6 +144,8 @@
                 <legend><strong>Testando range com output (oninput)</strong></legend>
                 <p>
                 <label class="msg" for="inum">Arraste o ponto na barra: </label>
+                <br>
+                <br>
                 <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
                 <output id="ival">5</output>
                 </p>
@@ -131,6 +157,7 @@
                     <label for="iano">E que ano você nasceu?</label>
                     <input type="number" name="ano" id="iano" min="1920" max="2024" oninput="calcIdade()">
                     </p>
+                    <br>
                     <p>
                     <label class="msg" for="iidade">Você tem ou vai fazer </label>
                     <output id="iidade">?</output> este ano :D
