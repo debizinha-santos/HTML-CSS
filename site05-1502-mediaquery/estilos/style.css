@@ -25,7 +25,7 @@ header h1 {
     text-align: center;
 }
 
-span {    
+#hamburguinho {    
     background-color: rgb(53, 50, 47);
     width: 100vw;
     text-align: center;
@@ -33,7 +33,7 @@ span {
     cursor: pointer;
 }
 
-span:hover {
+#hamburguinho:hover {
     background-color: white ;
     color: #592C28;
 }
@@ -48,7 +48,7 @@ menu ul {
 
 menu a {
     display: block;
-    padding: 10px 0px;
+    padding: 10px 10px;
     text-decoration: none;
     text-align: center;
     background-color: #71332ccd;
@@ -60,9 +60,6 @@ menu a:hover {
     background-color: #dc744f;
     color: #592C28;
 }
-
-
-
 
 main {
     width: 80vw;
