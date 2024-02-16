@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+/* margin e padding tira as bolinhas do li */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	height: 0px;
+}
+
+html, body {
+    background-color: #fad9b2;
+}
+
+header {
+    background-color: #A68C6D;
+}
+
+header h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+span {    
+    background-color: rgb(53, 50, 47);
+    width: 100vw;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+span:hover {
+    background-color: white ;
+    color: #592C28;
+}
+
+menu {
+    display:none;
+}
+
+menu ul {
+    list-style-type: none;
+}
+
+menu a {
+    display: block;
+    padding: 10px 0px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #71332ccd;
+    color: wheat;
+    border-top: 2px solid wheat;
+}
+
+menu a:hover {
+    background-color: #dc744f;
+    color: #592C28;
+}
+
+
+
+
+main {
+    width: 80vw;
+    margin: 10px auto;
+    background-color: #592c2870;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+article h2 { 
+    text-align: center;
+    padding: 20px 0px;
+}
+
+article p {
+    margin-bottom: 20px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
