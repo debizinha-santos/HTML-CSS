@@ -29,4 +29,4 @@
 <hr>
 <br>
 <p>
-<a href="https://debizinha-santos.github.io/HTML-CSS/1602-login/index.html" target="_blank">Menu básico</a> - Primeiro menu hamburguinho com Javascript</p>
+<a href="https://debizinha-santos.github.io/HTML-CSS/1602-login/index.html" target="_blank">Tela de login</a> - Criando uma simples tela de login</p>
