@@ -10,32 +10,35 @@
 </head>
 <body>
     <main>
-        <section>
-            <div id="imagem">
-            </div>
-            <div id="formulario">
-                <form action="form">
-                    <legend><strong>Login</strong></legend>
-                    <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                    <br>
-                    <div class="dados">
-                        <span id="person" class="material-icons">person</span>
-                        <input type="email" name="email" id="iemail" required placeholder="seu email">
-                    </div>
-                     
-                    <br>
-                    <div class="dados">
-                        <span id="key" class="material-icons">key</span>
-                        <input type="password" name="pass" id="ipass" required placeholder="sua senha">
-                    </div>
+    <section>
+        <div id="imagem">
+        
+        </div>
+    <div id="formulario">
+        <h1><strong>Login</strong></h1>
+        <p id="bv">Seja bem-vindo(a) novamente!
+        </p>
+        <p>Faça login para acessar sua conta e poder fazer as configurações do seu ambiente de trabalho.</p>
+    <form id="container" action="login.php" method="post" autocomplete="on">
                     
-                    <br>
-                    <input id="entrar" type="submit" value="Entrar">
-                    <br>
-                    <a href="esqueci.php">Esqueci a senha </a>
-                </form>
-            </div>
-        </section>
+        <div class="dados">
+            <span id="icon" class="material-icons">person</span>
+            <input type="email" name="email" id="iemail" required placeholder="seu email" maxlength="30">
+        </div>
+                        
+        <div class="dados">
+            <span id="icon" class="material-icons">key</span>
+            <input type="password" name="pass" id="ipass" required placeholder="sua senha" autocomplete="current-password" minlength="8"maxlength="15">
+        </div>
+                   
+        <input id="entrar" type="submit" value="Entrar">
+    <br>
+        <a href="esqueci.html">Esqueci a senha 
+        <span id="esqueci" class="material-icons">mail</span>
+        </a>
+    </form>
+    </div>
+    </section>
     </main>
 </body>
 </html>
