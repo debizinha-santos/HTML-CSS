@@ -22,12 +22,16 @@
     <form id="container" action="login.php" method="post" autocomplete="on">
                     
         <div class="dados">
-            <span id="icon" class="material-icons">person</span>
+            <label for="iemail"><span id="icon" class="material-icons">person</span>
+            </label>
+            
             <input type="email" name="email" id="iemail" required placeholder="seu email" maxlength="30">
         </div>
                         
         <div class="dados">
-            <span id="icon" class="material-icons">key</span>
+            <label for="ipass">
+                <span id="icon" class="material-icons">key</span>
+            </label>
             <input type="password" name="pass" id="ipass" required placeholder="sua senha" autocomplete="current-password" minlength="8"maxlength="15">
         </div>
                    
