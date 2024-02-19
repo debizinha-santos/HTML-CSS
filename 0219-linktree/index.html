@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR"> 
+<html lang="pt-BR" class="light"> 
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
@@ -11,26 +11,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
+
   </head>
   <body>
     <h1></h1>
     <div id="container">
       <div id="profile">
-        <img src="img/Avatar.png" alt="Foto de Débora com cabelo cacheado solto e fundo alaranjado">
+        <img src="img/Avatar.png" alt="Foto de Débora com cabelo solto, grande e cacheado">
+  
         <p>@debizinha.santos</p>
+
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+
       <ul>
         <li>
           <a href="#" target="_blank">0</a>
         </li>
-
         <li>
           <a href="#" target="_blank">1</a>
         </li>
-
         <li>
           <a href="#" target="_blank">2</a>
         </li>
-
         <li>
           <a href="#" target="_blank">3</a>
         </li>
@@ -47,10 +52,13 @@
           </a>   
         </div>
       </div>
-    </div>
 
+    </div>
+    <footer>Feito com ♥ durante uma aula da <a href="https://www.rocketseat.com.br">Rocketseat</a></footer>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="script.js"></script>
 
   </body>
 </html>
