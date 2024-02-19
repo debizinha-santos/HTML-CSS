@@ -11,7 +11,7 @@
   --bg-url: url(img/bg-mobile.jpg) no-repeat center top/cover;
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.2);
-  --surface-color-hover: rgba(255, 255, 255, 0.206);
+  --surface-color-hover: rgba(255, 255, 255, 0.475);
   --switch-bg-url: url(img/moon-stars.svg);
 }
 
@@ -20,7 +20,7 @@
   --bg-url: url(img/bg-mobile-light.jpg) no-repeat center top/cover;
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.263);
-  --surface-color-hover: rgba(0, 0, 0, 0.206);
+  --surface-color-hover: rgba(0, 0, 0, 0.502);
   --switch-bg-url: url(img/sun.svg);
 }
 
@@ -129,7 +129,7 @@ ul li a {
 ul li a:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.389);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.306);
 }
 
 #social {
