@@ -5,7 +5,7 @@
  <br>
 
 <p>
-<a href="https://debizinha-santos.github.io/HTML-CSS/0219-linktree/index.html" target="_blank">08 Link na BIO</a> - Criando um site responsivo para usar em perfis</p>
+<a href="https://debizinha-santos.github.io/HTML-CSS/0219-devlinks/index.html" target="_blank">08 Link na BIO</a> - Criando um site responsivo para usar em perfis</p>
 <hr>
 <br>
 <p>
