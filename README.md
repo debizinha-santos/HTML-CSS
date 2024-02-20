@@ -5,6 +5,10 @@
  <br>
 
 <p>
+<a href="https://debizinha-santos.github.io/HTML-CSS/0220-rotuloingles/index.html" target="_blank">09 Rótulo Nutricional</a> - Treino de tipografias</p>
+<hr>
+<br>
+<p>
 <a href="https://debizinha-santos.github.io/HTML-CSS/0219-devlinks/index.html" target="_blank">08 Link na BIO</a> - Criando um site responsivo para usar em perfis</p>
 <hr>
 <br>
