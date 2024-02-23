@@ -5,7 +5,7 @@
  <br>
 
 <p>
-<a href="https://debizinha-santos.github.io/HTML-CSS/0223-tributo/index.html" target="_blank">10 Tributo</a> - Página de Homenagem</p>
+<a href="https://debizinha-santos.github.io/HTML-CSS/0223-tribute/index.html" target="_blank">10 Tributo</a> - Página de Homenagem</p>
 <hr>
 <br>
 <p>
