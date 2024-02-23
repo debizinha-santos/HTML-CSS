@@ -5,6 +5,10 @@
  <br>
 
 <p>
+<a href="https://debizinha-santos.github.io/HTML-CSS/0223-tribute/index.html" target="_blank">10 Tributo</a> - Página de Homenagem</p>
+<hr>
+<br>
+<p>
 <a href="https://debizinha-santos.github.io/HTML-CSS/0220-rotuloingles/index.html" target="_blank">09 Rótulo Nutricional</a> - Treino de tipografias</p>
 <hr>
 <br>
